@@ -891,7 +891,10 @@
      f))
   ([f cursor opts]
    (if (instance? MultiFn f)
-     (let [dv ((.-dispatch-fn f) cursor nil opts)]
+     (let [df (.-dispatch-fn f)
+           dv (if (keyword? df)
+                (df cursor)
+                (df cursor nil opts))]
        (get-method f dv))
      f)))
 
