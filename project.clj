@@ -175,10 +175,10 @@
                 :output-dir "examples/refs/out"
                 :source-map true
                 :optimizations :none}}
-             {:id "tests"
-              :source-paths ["src" "examples/tests/src"]
+             {:id "buffer"
+              :source-paths ["src" "examples/buffer/src"]
               :compiler {
-                :output-to "examples/tests/main.js"
-                :output-dir "examples/tests/out"
+                :output-to "examples/buffer/main.js"
+                :output-dir "examples/buffer/out"
                 :source-map true
                 :optimizations :none}}]})

@@ -8,6 +8,7 @@ pom.xml.asc
 *.js
 *.jar
 *.class
+*.map
 /.lein-*
 /.nrepl-port
 examples/history
