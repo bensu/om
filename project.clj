@@ -5,6 +5,9 @@
             :url "http://www.eclipse.org/legal/epl-v10.html"}
 
   :jvm-opts ^:replace ["-Xms512m" "-Xmx512m" "-server"]
+  
+  :scm {:name "git"
+        :url "https://github.com/bensu/om"}
 
   :source-paths  ["src" "dev"]
 
