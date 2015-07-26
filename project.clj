@@ -17,9 +17,15 @@
                  [org.clojure/core.async "0.1.346.0-17112a-alpha" :scope "provided"]
                  [cljsjs/react "0.13.3-0"]]
 
-  :plugins [[lein-cljsbuild "1.0.5"]]
+  :plugins [[lein-cljsbuild "1.0.5"]
+            [funcool/codeina "0.3.0-SNAPSHOT"]]
 
   :clean-targets ^{:protect false} ["resources/out"]
+
+  :codeina {:source ["src"]
+            :reader :clojurescript
+            :src-uri "http://github.com/omcljs/om/blob/master/"
+            :src-uri-prefix "#L"}
 
   :cljsbuild {
     :builds [{:id "dev"
